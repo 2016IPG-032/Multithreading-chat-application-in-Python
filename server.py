@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# In[ ]:
+
 
 import socket
 import threading
@@ -71,5 +73,3 @@ while serverRunning:
     if(client not in clients):
         clients[uname] = client
         threading.Thread(target = handleClient, args = (client, uname, )).start()
-
-    
